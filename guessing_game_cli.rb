@@ -9,7 +9,7 @@ def run_guessing_game
   if input == 'exit'
       puts "Goodbye!"
   end
-  if input.to_i != random_num && input.to_i != 'exit'
+  if input.to_i != random_num && input != 'exit'
     puts "Sorry! The computer guessed #{random_num}."
   end
 end
