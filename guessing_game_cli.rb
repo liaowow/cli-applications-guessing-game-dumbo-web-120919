@@ -3,13 +3,13 @@ def run_guessing_game
   random_num = rand(6) + 1
   input = gets.chomp
   
-  if input == random_num
+  if input.to_i == random_num
     puts "You guessed the correct number!"
   end
-  if input == 'exit'
+  if input.to_i == 'exit'
       puts "Goodbye!"
   end
-  if input != random_num && input != 'exit'
+  if input.to_i != random_num && input.to_i != 'exit'
     puts "Sorry! The computer guessed #{random_num}."
   end
 end
